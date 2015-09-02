@@ -3,11 +3,14 @@ package MainPackage;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hellowww!!");
+		
+		char c = StringCodes.FindFirstNonRepeatingCharacter("stress");
+		
+		System.out.println(c);
 		
 		
-		System.out.println("Hiiii");
 
 	}
 
+		
 }
