@@ -63,7 +63,14 @@ public class Main {
 //		int[] input = { 4, 2, 9, 6, 23, 12, 34, 0, 1 };
 //        Sort.BubbleSort(input);
 		
+//		int[] nums = {5,2,7,2,4,7,8,2,3};
+//		NumbersCode.printDistinctNumbers(nums);
 		
+		int[] input1 = {2,3,6,6,8,9,10,10,10,12,12};
+        int[] output = NumbersCode.removeDuplicates(input1);
+        for(int i:output){
+            System.out.print(i+" ");
+        }
 		System.out.println();
 
 	
