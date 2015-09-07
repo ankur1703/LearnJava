@@ -100,4 +100,36 @@ public class NumbersCode {
 		}
 		return binary;
 	}
+	
+	public static boolean IsPerfectNumber(int number){
+		
+		int sum=0;
+		
+		for (int i = 1; i <= number/2;i++){
+			if (number%i == 0)
+				sum += i;
+		}
+		
+		if (sum==number)
+			return true;
+		else
+			return false;
+		
+	}
+	
+	public static int FibbonacciSeries(int fibTerms){
+		if (fibTerms == 1)
+			return 0;
+		else if(fibTerms == 2)
+			return 1;
+		else
+			return FibbonacciSeries(fibTerms -1) + FibbonacciSeries(fibTerms -2);
+	}
+	
+	public static int getNumberSum(int number){
+		if (number==0)
+			return number;
+		else
+			return number%10 + getNumberSum(number/10);
+	}
 }

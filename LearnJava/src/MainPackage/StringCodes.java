@@ -40,5 +40,28 @@ public class StringCodes {
 		return reversed;
 	}
 	
+	public static void FindDuplicatedCharacters(String str){
+		HashMap<Character, Integer> charMap = new HashMap<Character, Integer>();
+		for(int i = 0; i< str.length(); i++){
+			char ch = str.charAt(i);
+			for(int j = i; j< str.length(); j++){
+				if (ch==str.charAt(j)){
+					if(charMap.containsKey(ch))
+						charMap.put(ch, charMap.get(ch)+1);
+					else
+						charMap.put(ch, 1);
+				}
+					
+			}
+		}
+		
+		for (char key: charMap.keySet()){
+			int value = charMap.get(key);
+			if(value>1)
+				System.out.println("Repeated Characters are: " + key + " ");
+		}
+		
+	}
+	
 	
 }
