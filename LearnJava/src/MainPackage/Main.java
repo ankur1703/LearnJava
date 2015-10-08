@@ -64,7 +64,10 @@ public class Main {
 //        Sort.BubbleSort(input);
 		
 		
-		System.out.println();
+		
+		Converter con = new Converter();
+		Double rs = con.convert(1, "Terabyte" , "Kilobyte");
+		System.out.println(rs);
 
 	
 	

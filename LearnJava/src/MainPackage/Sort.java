@@ -18,4 +18,7 @@ public class Sort {
 		array[one] = array[two];
 		array[two] = temp;
 	}
+	
+	
+    
 }
