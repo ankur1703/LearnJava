@@ -132,4 +132,31 @@ public class NumbersCode {
 		else
 			return number%10 + getNumberSum(number/10);
 	}
+	
+	public static void printDistinctNumbers(int array[]){
+		for(int i=0;i< array.length;i++){
+			boolean isDistinct = true;
+			for(int j = 0; j< i;j++){
+				if(array[i] == array[j]){
+					isDistinct = false;
+					break;
+				}
+			}
+			if(isDistinct)
+				System.out.print(array[i] + " ");
+			}
+		
+	}
+	
+	public static int[] removeDuplicates(int [] input){
+		int[] output = new int[input.length];
+		int index=0;
+		for(int i = 0; i<input.length;i++){
+			if(i+1==input.length||input[i] != input[i+1]){
+					output[index] = input[i];
+					index++;
+				}
+		}
+		return output;
+	}
 }
