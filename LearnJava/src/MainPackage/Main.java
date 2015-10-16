@@ -70,7 +70,7 @@ public class Main {
         int[] output = NumbersCode.removeDuplicates(input1);
         for(int i:output){
             System.out.print(i+" ");
-        }	
+        }
 		
 		Converter con = new Converter();
 		double value = 15;
