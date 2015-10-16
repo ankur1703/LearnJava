@@ -66,9 +66,21 @@ public class Main {
 		
 		
 		Converter con = new Converter();
-		Double rs = con.convert(1, "Terabyte" , "Kilobyte");
+		double value = 15;
+		Double rs = con.convert(value, "Bit" , "Byte");
 		System.out.println(rs);
-
+		rs = con.convert(value, "Byte" , "Bit");
+		System.out.println(rs);
+		rs = con.convert(value, "Bit" , "Petabyte");
+		System.out.println(rs);
+		rs = con.convert(value, "Petabyte" , "Bit");
+		System.out.println(rs);
+		rs = con.convert(value, "Kilobyte" , "Gigabyte");
+		System.out.println(rs);
+		rs = con.convert(value, "Gigabyte" , "Kilobyte");
+		System.out.println(rs);
+		rs = con.convert(value, "Byte" , "Byte");
+		System.out.println(rs);
 	
 	
     
